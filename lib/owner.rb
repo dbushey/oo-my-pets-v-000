@@ -56,10 +56,11 @@ class Owner
     cats.map {|c| c.mood = "happy" }
   end
 
-  # def feed_fish
-  # fish.mood = "excited"
-  # end
-  #
+  def feed_fish
+    fishes = self.pets[:fishes]
+    fishes.map {|f| f.mood = "happy" }
+  end
+
   # def sell_pets
   #
   # end
