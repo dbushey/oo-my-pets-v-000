@@ -61,10 +61,12 @@ class Owner
     fishes.map {|f| f.mood = "happy" }
   end
 
-  # def sell_pets
-  #
-  # end
-  #
+  def sell_pets
+    all_pets = self.pets
+    binding.pry
+    #all_pets.map {|| f.mood = "happy" }
+  end
+
   # def list_pets
   #
   # end
