@@ -6,9 +6,6 @@ class Owner
 
   @@all = []
   @@count = 0
-  @@count_fishes = 0
-  @@count_cats = 0
-  @@count_dogs = 0
 
   def initialize(species = "human")
     @species = species
@@ -75,7 +72,7 @@ class Owner
   end
 
   def list_pets
-    "I have #{@pets[:fishes].size} fish, #{@@count_dogs} dog(s), and #{@@count_cats} cat(s)."
+    "I have #{@pets[:fishes].size} fish, #{@pets[:fishes].size} dog(s), and #{@pets[:fishes].size} cat(s)."
   end
 
 
