@@ -63,9 +63,11 @@ class Owner
 
   def sell_pets
     all_pets = self.pets
-    all_pets[keys]
+    all_pets.each do |key,val|  
+      all_pets[key].map {|k| k.mood = "nervous"}
+    end
     binding.pry
-    #all_pets.map {|| f.mood = "happy" }
+    
   end
 
   # def list_pets
