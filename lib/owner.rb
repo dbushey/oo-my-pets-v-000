@@ -50,6 +50,7 @@ class Owner
     dog = self.pets[:dogs]
     binding.pry
     dog.mood = "happy"
+    dog
   end
 
   # def play_with_cats
