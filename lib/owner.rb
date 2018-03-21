@@ -48,8 +48,8 @@ class Owner
 
   def walk_dogs
     dogs = self.pets[:dogs]
-    #binding.pry
     dogs.map do {|d| d.mood = "happy" }
+    #binding.pry
   end
 
   # def play_with_cats
