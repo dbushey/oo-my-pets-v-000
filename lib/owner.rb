@@ -43,11 +43,13 @@ class Owner
   def buy_cat(name)
     cat = Cat.new(name)
     @pets[:cats] << cat
+    @@count_cats += 1
   end
 
   def buy_dog(name)
     dog = Dog.new(name)
     @pets[:dogs] << dog
+    @@count_dogs += 1
   end
 
   def walk_dogs
@@ -74,7 +76,7 @@ class Owner
   end
 
   def list_pets
-    "I have 2 fish, 3 dog(s), and 1 cat(s)."
+    "I have #{@@count_fishes} fish, #{@@count_dogs} dog(s), and #{@@count_cats} cat(s)."
   end
 
 
