@@ -49,13 +49,13 @@ class Owner
   def walk_dogs
     dogs = self.pets[:dogs]
     dogs.map {|d| d.mood = "happy" }
-    #binding.pry
   end
 
-  # def play_with_cats
-  #
-  # end
-  #
+  def play_with_cats
+    cats = self.pets[:cats]
+    cats.map {|c| c.mood = "happy" }
+  end
+
   # def feed_fish
   # fish.mood = "excited"
   # end
