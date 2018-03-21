@@ -37,8 +37,6 @@ class Owner
   def buy_fish(name)
     fish = Fish.new(name)
     @pets[:fishes] << fish
-    @@count_fishes += 1
-    binding.pry
   end
 
   def buy_cat(name)
@@ -77,7 +75,7 @@ class Owner
   end
 
   def list_pets
-    "I have #{@@count_fishes} fish, #{@@count_dogs} dog(s), and #{@@count_cats} cat(s)."
+    "I have #{@pets[:fishes].size} fish, #{@@count_dogs} dog(s), and #{@@count_cats} cat(s)."
   end
 
 
