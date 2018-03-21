@@ -62,7 +62,7 @@ class Owner
   end
 
   def sell_pets
-    all_pets = self.pets
+    all_pets = self.pets[keys]
     binding.pry
     #all_pets.map {|| f.mood = "happy" }
   end
