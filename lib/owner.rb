@@ -67,7 +67,7 @@ class Owner
       hash_all_pets[key].map {|k| k.mood = "nervous"}
       hash_all_pets[key].map {|k| k = []}
     end
-    binding.pry
+    #binding.pry
 
   end
 
