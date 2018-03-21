@@ -44,7 +44,6 @@ class Owner
   def buy_dog(name)
     dog = Dog.new(name)
     @pets[:dogs] << dog
-    @@count_dogs += 1
   end
 
   def walk_dogs
