@@ -33,22 +33,19 @@ class Owner
 
   def buy_fish(name)
     fish = Fish.new(name)
-    binding.pry
     @pets[:fishes] << fish
-
   end
 
-  # def buy_cat(name)
-  #   cat = Cat.new(name)
-  #   @pets["cats"] << cat
-  #   #binding.pry
-  # end
-  #
-  # def buy_dog(name)
-  #   dog = Dog.new(name)
-  #   @pets["dogs"] << dog
-  #   #binding.pry
-  # end
+  def buy_cat(name)
+    cat = Cat.new(name)
+    @pets[:cats] << cat
+  end
+  
+  def buy_dog(name)
+    dog = Dog.new(name)
+    @pets["dogs"] << dog
+    #binding.pry
+  end
 
 
 
